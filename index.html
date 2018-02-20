@@ -4,12 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Лекция 4 - ДЗ</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>  
 
@@ -20,8 +20,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- header -->
         <header class="header">
+            <!-- Navbar -->
             <nav class="navigation">
-              <!-- Navigation -->
               <div class="container">
                 <ul class="nav nav-pills">
                   <li class="nav-item">
@@ -36,7 +36,7 @@
                       <a class="dropdown-item" href="#">Культура</a>
                       <a class="dropdown-item" href="#">Путешествия</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"> Style TV</a>
+                      <a class="dropdown-item" href="#">TV</a>
                     </div>
                   </li>
                   <li class="nav-item">
@@ -56,7 +56,6 @@
         </header>
         <main>
           <div class="container">
-            <!-- Carousel -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -96,12 +95,30 @@
 </div>
 </div>
 </div>
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container">
-  <!-- Main news - media -->
   <div class="media">
   <img class="align-self-center mr-3" src="images/instyle-logo.jpg" alt="logo">
   <div class="media-body">
-    <h2 class="mt-0">Главные новости</h2>
+    <h2 class="mt-0">Новости недели</h2>
     <p><a href="#">Образ дня: Анджелина Джоли в Elie Saabp</a></p>
     <p> <a href="#">Неделя моды в Лондоне: Gareth Pugh, Ports 1961 и Chalayan</a></p>
     <p> <a href="#">Чем запомнится работа Кристофера Бейли в Burberry</a></p>
@@ -111,7 +128,6 @@
 </div>
 <div class="container">
   <div class="caption">
-    <!-- Card -->
     <h2>Streetstyle - обзор недели моды в Нью-Йорке</h2>
 <div id="accordion">
   <div class="card">
@@ -148,7 +164,6 @@
 </div>
 </div>
 <div class="container">
-  <!-- Figure -->
   <h3>Интересное</h3>
   <figure class="figure">
   <img src="images/56d06ada7b237.jpeg" class="figure-img img-fluid rounded" alt="sasha">
@@ -193,13 +208,11 @@
           </button>
       </h5>
     </div>
-    <!-- Collapse -->
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         <div class="anketa">
     <form>
   <div class="form-group">
-    <!-- Form -->
     <label for="exampleFormControlInput1">ФИО</label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Введите Ваше имя">
   </div>
@@ -235,58 +248,41 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Получить свежий номер журнала</label>
   </div>
-  <button type="submit" class="btn btn-primary">Отправить</button>
-</form>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Отправить
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Вы уверенны?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Я соглашаюсь с политикой сайта...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+      </div>
     </div>
   </div>
 </div>
-      
+     </form> 
 <div class="container">
-  <!-- Progress -->
-  <h5>Скачать PDF-версию журнала</h5>
+  Скачать PDF-версию журнала 
   <div class="progress">
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%" placeholde="Загрузка"><a href="#">Загрузка</a></div>
 </div>
 </div>
 </main>
 <footer>
-  <div class="container">
-        <!-- Modal -->
-        <div class="footer-massage">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Отправить сообщение редактору</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Новое сообщение</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-      </div>
-      <div class="container">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Тема:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Сообщение:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-    </div>
-      <div class="container">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Отправить сообщение</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="container">
-  <div class="tooltip">
-  <!-- tooltip -->
   <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Контакты">
  Контакты
 </button>
@@ -297,8 +293,7 @@
 Реклама
 </button>
 </div>
-</div>
-<div class="container">
+	<div class="container">
     <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">на главную</a></li>
@@ -307,7 +302,7 @@
   </ol>
 </nav>
   </div>
-  <div class="container">
+   <div class="container">
         <p>&copy; 2016-2018 Style, Inc. &middot;</p>
       </div>
 </footer>
