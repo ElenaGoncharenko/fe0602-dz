@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8.9</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="8.9.css">
+</head>
+<body>
+	<div>DIV1</div>
+	<div>DIV2</div>
+	<div>DIV3</div>
+	<div>DIV4</div>
+	<div>DIV5</div>
+	<button>DELETE</button>
+	<script>
+		function removeDiv() {
+			var div = document.body.firstChild;
+			document.body.removeChild(div);
+		}
+	document.getElementsByTagName("button")[0].addEventListener("click", removeDiv);
+	</script>
+</body>
+</html>
